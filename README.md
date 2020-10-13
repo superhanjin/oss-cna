@@ -39,3 +39,28 @@ mvn spring-boot:run
 cd oss-fieldwork
 mvn spring-boot:run 
 ```
+
+# 평가항목
+1. Saga
+
+2. CQRS
+
+3. Correlation
+
+4. Request/Response
+
+5. Gateway
+
+6. Deploy/Pipeline
+
+7. Circuit Breaker
+
+8. Autoscale(HPA)
+
+9. Zero-downtime deploy (readiness probe)
+
+10. ConfigMap/Persisteence Volume
+
+11. Ployglot
+
+12. Self-healing (liveness probe)
