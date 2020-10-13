@@ -9,7 +9,7 @@
   - 작업자는 본인에게 할당된 오더에 대해 작업을 완료 후 작업결과를 입력한다. 
   - 현장의 상황에 따라 개통을 할 수 없는 경우 반송처리를 하며 반송할 경우 Activation 은 원복되어야 한다
   - 청약자는 전체적인 개통처리 현황을 확인할 수 있어야 한다. 
-1. 비기능적 요구사항
+2. 비기능적 요구사항
   - 트랜잭션
     스케줄링 호출이 되지 않으면, Activation 상태는 그대로 유지가 된다. Sync 호출
   - 장애격리
@@ -20,3 +20,22 @@
 
 # 모델링
 ![이벤트스토밍](https://user-images.githubusercontent.com/22510081/95879387-443aaa80-0db1-11eb-99bd-108727f692f1.png)
+
+
+# 구현:
+
+분석/설계 단계에서 도출된 헥사고날 아키텍처에 따라, 각 BC별로 대변되는 마이크로 서비스들을 스프링부트로 구현하였다. 구현한 각 서비스를 로컬에서 실행하는 방법은 아래와 같다 (각자의 포트넘버는 8081 ~ 808n 이다)
+
+```
+cd oss-order
+mvn spring-boot:run
+
+cd oss-activation
+mvn spring-boot:run 
+
+cd oss-scheduling
+mvn spring-boot:run  
+
+cd oss-fieldwork
+mvn spring-boot:run 
+```
