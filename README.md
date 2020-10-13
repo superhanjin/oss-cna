@@ -1,5 +1,3 @@
-# oss-cna
-
 # 주제 : OSS (Operation Support System)
 
 # 서비스 시나리오
