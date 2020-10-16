@@ -19,9 +19,9 @@
     청약자는 개통처리 상황을 마이페이지(프론트엔드)에서 확인할 수 있어야 한다 CQRS
 
 # 모델링
-경로: https://user-images.githubusercontent.com/22510081/96206131-38aed580-0fa3-11eb-81fc-fc8470b9e104.png
+경로: http://www.msaez.io/#/storming/cr2xPwrCuogB3RmUnLsg1ghhJpI2/mine/9497f301cf8f22b00a7710f3510709aa/-MIb0RpRdZ8yv5M0TByS
 
-
+<img width="1269" alt="MSA_OSS" src="https://user-images.githubusercontent.com/22510081/96206131-38aed580-0fa3-11eb-81fc-fc8470b9e104.png">
 
 
 # 구현:
