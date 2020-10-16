@@ -19,7 +19,9 @@
     청약자는 개통처리 상황을 마이페이지(프론트엔드)에서 확인할 수 있어야 한다 CQRS
 
 # 모델링
-![이벤트스토밍](https://user-images.githubusercontent.com/22510081/95879387-443aaa80-0db1-11eb-99bd-108727f692f1.png)
+경로: https://user-images.githubusercontent.com/22510081/96206131-38aed580-0fa3-11eb-81fc-fc8470b9e104.png
+
+
 
 
 # 구현:
