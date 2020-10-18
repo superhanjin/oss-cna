@@ -24,23 +24,33 @@
 <img width="1269" alt="MSA_OSS" src="https://user-images.githubusercontent.com/22510081/96206131-38aed580-0fa3-11eb-81fc-fc8470b9e104.png">
 
 
-# 구현:
+# 구현
 
-분석/설계 단계에서 도출된 헥사고날 아키텍처에 따라, 각 BC별로 대변되는 마이크로 서비스들을 스프링부트로 구현하였다. 구현한 각 서비스를 로컬에서 실행하는 방법은 아래와 같다 (각자의 포트넘버는 8081 ~ 808n 이다)
+분석/설계 단계에서 도출된 헥사고날 아키텍처에 따라, 각 BC별로 대변되는 마이크로 서비스들을 스프링부트로 구현하였다. 
+oss-order : 8081
+oss-activation : 8082
+oss-scheduling : 8083
+oss-fieldwork : 8084
+oss-gateway : 8088 (local), 8080 (docker)
 
-```
-cd oss-order
-mvn spring-boot:run
+1. IntelliJ 프로젝트 구성
+<img width="1280" alt="IntelliJ_Project" src="https://user-images.githubusercontent.com/22510081/96367999-10ce9600-118c-11eb-8867-d338145c812b.png">
+2. GitHub Repository 구성
+<img width="1280" alt="GitHub_Repository" src="https://user-images.githubusercontent.com/22510081/96368002-14621d00-118c-11eb-882e-37aa69209812.png">
 
-cd oss-activation
-mvn spring-boot:run 
+# 업무처리 흐름
+1. Local Scenario 1 (청약 후 청약취소)
+ - 청약
+<img width="1214" alt="flow1-1" src="https://user-images.githubusercontent.com/22510081/96368169-68b9cc80-118d-11eb-9f89-0779028cf5eb.png">
+<img width="1214" alt="flow1-1_kafka" src="https://user-images.githubusercontent.com/22510081/96368170-68b9cc80-118d-11eb-8c13-614ec15a0d37.png">
+<img width="1214" alt="flow1-2" src="https://user-images.githubusercontent.com/22510081/96368171-69526300-118d-11eb-9aa5-26f3468ccb89.png">
+<img width="1214" alt="flow1-2_kafka" src="https://user-images.githubusercontent.com/22510081/96368173-69526300-118d-11eb-9087-02c46e60fdb4.png">
+<img width="1214" alt="flow1-2_myPage" src="https://user-images.githubusercontent.com/22510081/96368174-69eaf980-118d-11eb-9c09-83c82d013737.png">
+<img width="1214" alt="flow1-3" src="https://user-images.githubusercontent.com/22510081/96368166-66f00900-118d-11eb-84b3-58845cff0cf7.png">
+<img width="1214" alt="flow1-3_kafka" src="https://user-images.githubusercontent.com/22510081/96368167-67889f80-118d-11eb-8de6-27e7c9d59ddc.png">
+<img width="1214" alt="flow1-3_myPage" src="https://user-images.githubusercontent.com/22510081/96368168-68213600-118d-11eb-8369-efefc6cd21f7.png">
 
-cd oss-scheduling
-mvn spring-boot:run  
 
-cd oss-fieldwork
-mvn spring-boot:run 
-```
 
 # 평가항목
 1. Saga
