@@ -80,6 +80,7 @@
 
 2. CQRS
 - MyPage 에서 CQRS 구현
+
 public class MyPageViewHandler {
 
     @Autowired
@@ -136,17 +137,33 @@ public class MyPageViewHandler {
 - gateway flow 시연으로 갈음
 
 6. Deploy/Pipeline
-- Amazon CodeBuild 를 이용한 자동 빌드/배포 
+- Amazon CodeBuild 를 이용한 자동 빌드/배포
 <img width="1231" alt="CodeBuild1" src="https://user-images.githubusercontent.com/22510081/96368616-a881b380-118f-11eb-9189-93d10d9d6414.png">
 
 7. Circuit Breaker
+- istio 가능하게 설정 변경
+kubectl label namespace oss istio-injection=enabled
+<img width="695" alt="CB1" src="https://user-images.githubusercontent.com/22510081/96369100-f64beb00-1192-11eb-9c62-d91224d63ecf.png">
+
 
 8. Autoscale(HPA)
+<img width="1048" alt="HPA1" src="https://user-images.githubusercontent.com/22510081/96370778-f7344b00-1199-11eb-885f-052cf42054a3.png">
+
 
 9. Zero-downtime deploy (readiness probe)
+<img width="1048" alt="ReadinessProbe" src="https://user-images.githubusercontent.com/22510081/96370757-e97ec580-1199-11eb-9513-834df99ea4f5.png">
 
 10. ConfigMap/Persisteence Volume
+- ConfigMap
+<img width="1010" alt="ConfigMap1" src="https://user-images.githubusercontent.com/22510081/96370802-0ddaa200-119a-11eb-9395-cab6795aa0da.png">
+<img width="1184" alt="ConfigMap2" src="https://user-images.githubusercontent.com/22510081/96370803-0f0bcf00-119a-11eb-9e29-218666f45f0e.png">
+
+- Persistence Volume
+<img width="941" alt="PVC1" src="https://user-images.githubusercontent.com/22510081/96370829-2cd93400-119a-11eb-88e8-f7b5c6344d3a.png">
 
 11. Ployglot
+<img width="861" alt="ployglot" src="https://user-images.githubusercontent.com/22510081/96370732-d66bf580-1199-11eb-8a76-39d6d93de579.png">
 
 12. Self-healing (liveness probe)
+<img width="891" alt="Liveness" src="https://user-images.githubusercontent.com/22510081/96370910-71fd6600-119a-11eb-9a3f-e2beaa0f6634.png">
+
