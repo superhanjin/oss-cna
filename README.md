@@ -140,10 +140,19 @@ public class MyPageViewHandler {
 - Amazon CodeBuild 를 이용한 자동 빌드/배포
 <img width="1231" alt="CodeBuild1" src="https://user-images.githubusercontent.com/22510081/96368616-a881b380-118f-11eb-9189-93d10d9d6414.png">
 
-7. Circuit Breaker
+7. Circuit Break
 - istio 가능하게 설정 변경
-kubectl label namespace oss istio-injection=enabled
-<img width="695" alt="CB1" src="https://user-images.githubusercontent.com/22510081/96369100-f64beb00-1192-11eb-9c62-d91224d63ecf.png">
+<img width="721" alt="CB1" src="https://user-images.githubusercontent.com/22510081/96408917-6607b780-121f-11eb-86c5-2dac0e4ed590.png">
+- Deploy 재수행하여 sidecar 생성 확인
+<img width="977" alt="CB2" src="https://user-images.githubusercontent.com/22510081/96408904-63a55d80-121f-11eb-8544-d03ee9abff6c.png">
+- Destination Rule 생성
+<img width="754" alt="CB3" src="https://user-images.githubusercontent.com/22510081/96408907-64d68a80-121f-11eb-8718-053f3f5e87be.png">
+- Circuit Break 비적용 상태
+<img width="538" alt="CB4-1" src="https://user-images.githubusercontent.com/22510081/96408909-64d68a80-121f-11eb-900e-347749f43a2e.png">
+<img width="445" alt="CB4-2" src="https://user-images.githubusercontent.com/22510081/96408910-656f2100-121f-11eb-80fd-bbdb7abde73a.png">
+- Circuit Break 적용 상태
+<img width="563" alt="CB5-1" src="https://user-images.githubusercontent.com/22510081/96408911-656f2100-121f-11eb-90b5-b634a796dfc3.png">
+<img width="571" alt="CB5-2" src="https://user-images.githubusercontent.com/22510081/96408913-6607b780-121f-11eb-8ed1-fedf26738412.png">
 
 
 8. Autoscale(HPA)
@@ -158,13 +167,16 @@ kubectl label namespace oss istio-injection=enabled
 - ConfigMap
 <img width="1010" alt="ConfigMap1" src="https://user-images.githubusercontent.com/22510081/96370802-0ddaa200-119a-11eb-9395-cab6795aa0da.png">
 <img width="1184" alt="ConfigMap2" src="https://user-images.githubusercontent.com/22510081/96370803-0f0bcf00-119a-11eb-9e29-218666f45f0e.png">
+<img width="672" alt="ConfigMap1" src="https://user-images.githubusercontent.com/22510081/96409927-0e6a4b80-1221-11eb-8592-e780c4f2d060.png">
 
 - Persistence Volume
 <img width="941" alt="PVC1" src="https://user-images.githubusercontent.com/22510081/96370829-2cd93400-119a-11eb-88e8-f7b5c6344d3a.png">
+<img width="623" alt="PVC_storageclass pvc생성" src="https://user-images.githubusercontent.com/22510081/96409837-e549bb00-1220-11eb-9660-64bfa1780a96.png">
 
 11. Ployglot
 <img width="861" alt="ployglot" src="https://user-images.githubusercontent.com/22510081/96370732-d66bf580-1199-11eb-8a76-39d6d93de579.png">
 
 12. Self-healing (liveness probe)
-<img width="891" alt="Liveness" src="https://user-images.githubusercontent.com/22510081/96370910-71fd6600-119a-11eb-9a3f-e2beaa0f6634.png">
+<img width="907" alt="Liveness1" src="https://user-images.githubusercontent.com/22510081/96409630-8dab4f80-1220-11eb-8e6e-2fed6a32fade.png">
+<img width="1027" alt="Liveness2" src="https://user-images.githubusercontent.com/22510081/96409628-8c7a2280-1220-11eb-8475-a9eb70b45fd9.png">
 
