@@ -147,8 +147,9 @@ kubectl label namespace oss istio-injection=enabled
 
 
 8. Autoscale(HPA)
-<img width="1048" alt="HPA1" src="https://user-images.githubusercontent.com/22510081/96370778-f7344b00-1199-11eb-885f-052cf42054a3.png">
-
+<img width="494" alt="HPA1" src="https://user-images.githubusercontent.com/22510081/96405548-7bc5ae80-1218-11eb-9e77-2ffaa933f1ed.png">
+<img width="644" alt="HPA2" src="https://user-images.githubusercontent.com/22510081/96405543-7a948180-1218-11eb-886d-0fab84bfbdf4.png">
+<img width="1280" alt="HPA3" src="https://user-images.githubusercontent.com/22510081/96405545-7b2d1800-1218-11eb-891e-24f363014645.png">
 
 9. Zero-downtime deploy (readiness probe)
 <img width="1048" alt="ReadinessProbe" src="https://user-images.githubusercontent.com/22510081/96370757-e97ec580-1199-11eb-9513-834df99ea4f5.png">
